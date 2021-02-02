@@ -27,14 +27,14 @@
   
     <script src="./js/pagination.min.js"></script>
     <script>
-     $('#demo').pagination({
-       dataSource: [1, 2, 3, 4, 5, 6, 7, ... , 195],
-       callback: function(data, pagination) {
+     $('#pagination-container').pagination({
+    dataSource: [1, 2, 3, 4, 5, 6, 7, ... , 195],
+    callback: function(data, pagination) {
         // template method of yourself
         var html = template(data);
-        dataContainer.html(html);
-       }
-     })
+        $('#data-container').html(html);
+    }
+})
     </script>
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
