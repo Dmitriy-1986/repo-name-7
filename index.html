@@ -93,7 +93,7 @@ function pagination(event) {
   var target = e.target;
   var id = target.id;
   
-  if (target.tagName.toLowerCase() != "span") return;
+  if (target.tagName.toLowerCase() != "a") return;
   
   var num_ = id.substr(4);
   var data_page = +target.dataset.page;
